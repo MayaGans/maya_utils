@@ -1,14 +1,16 @@
-let uniqueArr = []
-export default function removeDuplicates(arr) {
+export default maya_utils = {
 
-  // Accepts an array from which the duplicates
-  // will be removed
-  if (!Array.isArray(arr)){
+  removeDuplicates: function(arr) {
+    // Accepts an array from which the duplicates
+    // will be removed
+    if (!Array.isArray(arr)){
     arr = []
+    }
+
+    let theSet = new Set(arr)
+    let uniqueArr = [...theSet]
+
+    return uniqueArr
   }
 
-  let theSet = new Set(arr)
-  let uniqueArr = [...theSet]
-
-  return uniqueArr
 }
