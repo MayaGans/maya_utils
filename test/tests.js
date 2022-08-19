@@ -2,7 +2,7 @@
 
 var assert = require('assert');
 import { removeDuplicates } from "../src/removeDuplicates.js"
-/* import { pluck } from "../src/pluck.js" */
+import { pluck } from "../src/pluck.js"
 
 describe('suite of utility functions', function () {
   describe('removing array duplicates', function () {
@@ -12,7 +12,6 @@ describe('suite of utility functions', function () {
       });
   });
 
-  /*
   describe('pluck out values using key', function () {
     it('should return an array of values', function () {
         let myObj = [
@@ -22,5 +21,4 @@ describe('suite of utility functions', function () {
         assert.deepEqual(['Batman', 'Robin'], pluck('name', myObj));
       });
   });
-  */
 })
