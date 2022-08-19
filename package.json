@@ -1,11 +1,11 @@
 {
-  "name": "mayatest",
-  "version": "1.0.0",
+  "name": "maya_utils",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup --config",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild index.js --bundle --outfile=out.js",
+    "test": "mocha-esbuild"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,11 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
+    "esbuild": "^0.15.5",
     "rollup": "^2.77.2"
+  },
+  "devDependencies": {
+    "@rtvision/mocha-esbuild": "^0.1.8",
+    "mocha": "^10.0.0"
   }
 }
