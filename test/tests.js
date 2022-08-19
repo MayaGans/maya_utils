@@ -1,7 +1,7 @@
 'use strict'
 
 var assert = require('assert');
-import { removeDuplicates } from "../src/removeDuplicates"
+import { removeDuplicates } from "../src/removeDuplicates.js"
 import { pluck } from "../src/pluck.js"
 
 describe('suite of utility functions', function () {

@@ -1,11 +1,12 @@
 {
   "name": "maya_utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "esbuild index.js --bundle --outfile=out.js",
-    "test": "mocha-esbuild"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
