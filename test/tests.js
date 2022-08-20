@@ -1,6 +1,7 @@
 'use strict'
 
-var assert = require('assert');
+
+var assert = require('chai').assert;
 import { removeDuplicates } from "../src/removeDuplicates.js"
 import { pluck } from "../src/pluck.js"
 
